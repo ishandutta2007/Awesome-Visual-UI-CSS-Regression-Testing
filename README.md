@@ -1,35 +1,45 @@
-# Awesome Visual UI & CSS Regression Testing
+# Awesome Visual UI & CSS Regression Testing 👁️✨
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/ishandutta2007/Awesome-Visual-UI-CSS-Regression-Testing/)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Visual UI and CSS Regression Testing Banner" width="100%" />
+</p>
 
-> A curated list of top Visual UI and CSS Regression Testing platforms — comparing SaaS/Hosted enterprise solutions and active open-source frameworks for catching unintended visual bugs, layout shifts, and pixel-level regressions across web and mobile user interfaces.
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?styleffor-the-badge&logo=discord&logoColor=white" alt="Discor" /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://www.trackawesomelist.com/ishandutta2007/Awesome-Visual-UI-CSS-Regression-Testing/"><img src="https://www.trackawesomelist.com/badge.svg" alt="Track Awesome List" /></a>
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
----
-
-## 📋 Table of Contents
-
-- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-- [Open-Source Software](#-open-source-software)
-- [Comparison at a Glance](#-comparison-at-a-glance)
-- [Contributing](#-contributing)
-- [License](#-license)
+> 🌟 **A curated list of top Visual UI and CSS Regression Testing platforms** — comparing SaaS/Hosted enterprise solutions and active open-source frameworks for catching unintended visual bugs, layout shifts, pixel differences, and responsive CSS regressions across web, desktop, and mobile user interfaces. 🚀
 
 ---
 
-## 🌐 Sector Overview & Market Dynamics
+## 📋 Table of Contents 📑
 
-The global visual regression and automated UI testing market is currently estimated at **$1.8 billion to $2.2 billion**, embedded within the broader **$25+ billion** automated software quality assurance industry expanding at a ~15–19% CAGR. The sector exhibits a **moderately fragmented yet top-heavy market structure**; while infrastructure giants like BrowserStack and Sauce Labs dominate broad device clouds, specialized visual AI and component testing niches remain highly competitive alongside agile open-source ecosystems.
+- [Sector Overview & Market Dynamics 🌐](#-sector-overview--market-dynamics-)
+- [SaaS / Hosted Platforms 🟦](#-saas--hosted-platforms-)
+- [Open-Source Software 🟩](#-open-source-software-)
+- [Comparison at a Glance 📊](#-comparison-at-a-glance-)
+- [Star History 📈](#-star-history-)
+- [Support & Community 💖](#-support--community-)
+- [Contributing 🤝](#-contributing-)
+- [License 📄](#-license-)
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 🌐 Sector Overview & Market Dynamics 📈
 
-Commercial, cloud-hosted visual UI and CSS regression testing platforms. Sorted in descending order by company scale (valuation / annual revenue).
+The global visual regression and automated UI testing market is currently estimated at **$1.8 billion to $2.2 billion**, embedded within the broader **$25+ billion** automated software quality assurance industry expanding at a ~15–19% CAGR. The sector exhibits a **moderately fragmented yet top-heavy market structure**; while infrastructure giants like BrowserStack and Sauce Labs dominate broad device clouds, specialized visual AI and component testing niches remain highly competitive alongside agile open-source ecosystems. 💡
 
-| Platform | Company Valuation / Revenue | Starting Pricing Tier | Free Tier / Free Trial Limits | Key Capabilities & Ecosystem |
+---
+
+## 🟦 SaaS / Hosted Platforms ☁️
+
+Commercial, cloud-hosted visual UI and CSS regression testing platforms. Sorted in descending order by company scale (valuation / annual revenue). 🏢
+
+| Platform 🚀 | Company Valuation / Revenue 💰 | Starting Pricing Tier 🏷️ | Free Tier / Free Trial Limits 🎁 | Key Capabilities & Ecosystem 🛠️ |
 |:---|:---|:---|:---|:---|
 | **[BrowserStack Percy](https://percy.io/)** | **~$4.0B valuation** (~$225M ARR) | **$199/month** (Percy Desktop, billed annually) | **5,000 screenshots/month** free forever (1,000 for App Percy); unlimited users & projects | Cloud DOM re-rendering, multi-browser matrix, Playwright, Cypress, Selenium, Storybook, and mobile app visual diffs. |
 | **[LambdaTest SmartUI](https://www.lambdatest.com/smart-ui)** | **~$400M valuation** (~$19M ARR) | **$199/month** (billed annually for SmartUI Web) | **2,000 screenshots** lifetime free tier; or 15-day trial with full cross-browser test access | Visual AI smart pixel noise reduction, native Figma baseline comparison, Storybook integration, Playwright, and Selenium support. |
@@ -40,11 +50,11 @@ Commercial, cloud-hosted visual UI and CSS regression testing platforms. Sorted 
 
 ---
 
-## 🟩 Open-Source Software
+## 🟩 Open-Source Software 🔓
 
-Self-hosted, developer-friendly open-source frameworks, libraries, and platforms for automated visual UI and CSS regression testing. Sorted in descending order by GitHub stargazers count.
+Self-hosted, developer-friendly open-source frameworks, libraries, and platforms for automated visual UI and CSS regression testing. Sorted in descending order by GitHub stargazers count. ⭐
 
-| Project | Stars | Stack | License | Description & Highlights |
+| Project 📦 | Stars ⭐ | Stack 💻 | License 📜 | Description & Highlights 🔍 |
 |:---|:---:|:---|:---|:---|
 | **[BackstopJS](https://github.com/garris/BackstopJS)** | [![BackstopJS Stars](https://img.shields.io/github/stars/garris/BackstopJS?style=social&color=white)](https://github.com/garris/BackstopJS/stargazers) | Node.js / Puppeteer / Playwright | MIT | Veteran visual regression tool supporting responsive DOM screenshot diffing across screen sizes, interacting with simulated user journeys, and generating self-contained HTML test reports. |
 | **[pixelmatch](https://github.com/mapbox/pixelmatch)** | [![pixelmatch Stars](https://img.shields.io/github/stars/mapbox/pixelmatch?style=social&color=white)](https://github.com/mapbox/pixelmatch/stargazers) | JavaScript / Node.js | ISC | The smallest, simplest, and fastest pure JS pixel-level image comparison library. Powers diffing engines across numerous visual testing tools with anti-aliased pixel detection and perceptual difference tuning. |
@@ -61,9 +71,9 @@ Self-hosted, developer-friendly open-source frameworks, libraries, and platforms
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Comparison at a Glance 🔍
 
-| Tool / Platform | Category | Core Capture Engine | Baseline Diff Model | Self-Hostable? | Free Plan / Allowance | Primary Use Case |
+| Tool / Platform 🛠️ | Category 🏷️ | Core Capture Engine ⚙️ | Baseline Diff Model 🎯 | Self-Hostable? 🖥️ | Free Plan / Allowance 🎁 | Primary Use Case 🎯 |
 |:---|:---|:---|:---|:---:|:---|:---|
 | **BrowserStack Percy** | Commercial SaaS | Cloud DOM re-render | Pixel & DOM diff | ❌ | 5,000 screenshots/month | Multi-framework cross-browser enterprise teams |
 | **LambdaTest SmartUI** | Commercial SaaS | Cloud headless browsers | Visual AI noise reduction | ❌ | 2,000 screenshots lifetime | Teams using LambdaTest cloud and Figma mockups |
@@ -86,17 +96,33 @@ Self-hosted, developer-friendly open-source frameworks, libraries, and platforms
 
 ---
 
-## 🤝 Contributing
+## 📈 Star History
 
-Contributions are welcome! If you would like to submit a new open-source visual UI testing library or updated SaaS platform details:
-
-1. Fork this repository.
-2. Ensure the tool is actively maintained and relevant to visual UI / CSS regression testing.
-3. For open-source projects, include the official GitHub star badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page.
-4. Open a pull request with a concise overview of what the tool accomplishes and why it stands out.
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Visual-UI-CSS-Regression-Testing&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Visual-UI-CSS-Regression-Testing&type=date&legend=top-left)
 
 ---
 
-## 📄 License
+## 💖 Support & Community 🙏
 
-This repository and curated list are released under the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (Public Domain). Respective trademarks, logos, and software projects belong to their individual owners.
+Thank you so much for exploring this curated repository! If this guide helped you discover the right visual regression tool, reduce UI bugs, or streamline your design system QA workflows, please consider showing your support:
+
+- ⭐ **Star this repository** to help other developers and QA engineers discover it!
+- 🍴 **Fork and share** it with your developer community, colleagues, and friends.
+- ☕ **Buy me a coffee / Sponsor**: If you appreciate this work and want to support ongoing maintenance and new tools updates, you can sponsor through the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007). Every bit of support is deeply appreciated! ☕✨
+
+---
+
+## 🤝 Contributing 💡
+
+Contributions are warmly welcomed! If you would like to submit a new open-source visual UI testing library or updated SaaS platform details:
+
+1. Fork this repository. 🍴
+2. Ensure the tool is actively maintained and relevant to visual UI / CSS regression testing. 🔍
+3. For open-source projects, include the official GitHub star badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page. ⭐
+4. Open a pull request with a concise overview of what the tool accomplishes and why it stands out. 🚀
+
+---
+
+## 📄 License ⚖️
+
+This repository and curated list are released under the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) (Public Domain). Respective trademarks, logos, and software projects belong to their individual owners. 🌐

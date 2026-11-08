@@ -1,0 +1,214 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="360" style="background:#0a0d18; border-radius:12px; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f24" />
+      <stop offset="50%" stop-color="#111836" />
+      <stop offset="100%" stop-color="#070a14" />
+    </linearGradient>
+
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="cyanPill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.1" />
+    </linearGradient>
+
+    <linearGradient id="diffGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#22c55e" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Scanning beam animation -->
+    <linearGradient id="scanBeam" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
+      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.75" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="subtleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <style>
+    /* Continuous background pulse & scanning animation */
+    @keyframes scanMove {
+      0% { transform: translateX(-300px); }
+      50% { transform: translateX(1100px); }
+      100% { transform: translateX(-300px); }
+    }
+    @keyframes pulseOpacity {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.65; }
+    }
+    @keyframes floatParticle {
+      0%, 100% { transform: translateY(0px) scale(1); }
+      50% { transform: translateY(-12px) scale(1.15); }
+    }
+    @keyframes badgeGlow {
+      0%, 100% { stroke: #38bdf8; stroke-opacity: 0.4; }
+      50% { stroke: #c084fc; stroke-opacity: 0.9; }
+    }
+    @keyframes scanLineY {
+      0% { transform: translateY(0px); opacity: 0; }
+      10% { opacity: 0.7; }
+      90% { opacity: 0.7; }
+      100% { transform: translateY(180px); opacity: 0; }
+    }
+
+    .scanner-bar {
+      animation: scanMove 7s ease-in-out infinite;
+    }
+    .grid-pulse {
+      animation: pulseOpacity 5s ease-in-out infinite;
+    }
+    .float-orb-1 {
+      animation: floatParticle 6s ease-in-out infinite;
+    }
+    .float-orb-2 {
+      animation: floatParticle 8s ease-in-out infinite reverse;
+    }
+    .hud-border {
+      animation: badgeGlow 4s ease-in-out infinite;
+    }
+    .radar-line {
+      animation: scanLineY 4s linear infinite;
+    }
+  </style>
+
+  <!-- Deep background -->
+  <rect width="1200" height="360" rx="12" fill="url(#bgGrad)" />
+
+  <!-- Ambient background glow spheres (Dynamic Layer) -->
+  <g class="float-orb-1">
+    <circle cx="150" cy="80" r="140" fill="#38bdf8" opacity="0.08" filter="url(#glow)" />
+  </g>
+  <g class="float-orb-2">
+    <circle cx="1060" cy="270" r="160" fill="#a855f7" opacity="0.09" filter="url(#glow)" />
+  </g>
+  <circle cx="600" cy="180" r="220" fill="#4f46e5" opacity="0.06" filter="url(#glow)" />
+
+  <!-- Geometric Grid Pattern (Subtle background) -->
+  <g class="grid-pulse" stroke="#38bdf8" stroke-width="0.75" stroke-opacity="0.15">
+    <line x1="80" y1="0" x2="80" y2="360" />
+    <line x1="200" y1="0" x2="200" y2="360" />
+    <line x1="320" y1="0" x2="320" y2="360" />
+    <line x1="880" y1="0" x2="880" y2="360" />
+    <line x1="1000" y1="0" x2="1000" y2="360" />
+    <line x1="1120" y1="0" x2="1120" y2="360" />
+    <line x1="0" y1="70" x2="1200" y2="70" />
+    <line x1="0" y1="180" x2="1200" y2="180" />
+    <line x1="0" y1="290" x2="1200" y2="290" />
+  </g>
+
+  <!-- Animated Scanning Laser Strip in Background -->
+  <g class="scanner-bar" opacity="0.35">
+    <rect x="0" y="20" width="220" height="320" fill="url(#scanBeam)" />
+  </g>
+
+  <!-- Stylized Decorative Visual Inspection Frames (Flanking Sides) -->
+  <!-- Left Side: Baseline UI wireframe mockup -->
+  <g opacity="0.45" transform="translate(60, 95)">
+    <rect width="130" height="170" rx="8" fill="#131c38" stroke="#334155" stroke-width="1.5" />
+    <rect x="12" y="14" width="60" height="10" rx="3" fill="#38bdf8" opacity="0.6" />
+    <circle cx="110" cy="19" r="5" fill="#22c55e" opacity="0.8" />
+    <rect x="12" y="34" width="106" height="42" rx="4" fill="#1e293b" />
+    <rect x="12" y="86" width="48" height="30" rx="3" fill="#1e293b" />
+    <rect x="70" y="86" width="48" height="30" rx="3" fill="#1e293b" />
+    <rect x="12" y="126" width="106" height="24" rx="3" fill="#1e293b" />
+    <!-- Radar scanner line inside baseline mockup -->
+    <g class="radar-line">
+      <line x1="10" y1="10" x2="120" y2="10" stroke="#38bdf8" stroke-width="2" filter="url(#subtleGlow)" />
+    </g>
+    <text x="65" y="163" fill="#64748b" font-size="9" font-weight="600" text-anchor="middle" letter-spacing="1">BASELINE</text>
+  </g>
+
+  <!-- Right Side: Visual Diff / Regression Result mockup -->
+  <g opacity="0.45" transform="translate(1010, 95)">
+    <rect width="130" height="170" rx="8" fill="#131c38" stroke="#334155" stroke-width="1.5" />
+    <rect x="12" y="14" width="60" height="10" rx="3" fill="#c084fc" opacity="0.6" />
+    <circle cx="110" cy="19" r="5" fill="#ef4444" opacity="0.8" />
+    <rect x="12" y="34" width="106" height="42" rx="4" fill="#1e293b" />
+    <!-- Highlighted pixel diff region in red -->
+    <rect x="12" y="86" width="48" height="30" rx="3" fill="#ef4444" fill-opacity="0.4" stroke="#ef4444" stroke-width="1" />
+    <rect x="70" y="86" width="48" height="30" rx="3" fill="#1e293b" />
+    <rect x="12" y="126" width="106" height="24" rx="3" fill="#1e293b" />
+    <g class="radar-line">
+      <line x1="10" y1="10" x2="120" y2="10" stroke="#f43f5e" stroke-width="2" filter="url(#subtleGlow)" />
+    </g>
+    <text x="65" y="163" fill="#f43f5e" font-size="9" font-weight="600" text-anchor="middle" letter-spacing="1">DIFF CAUGHT</text>
+  </g>
+
+  <!-- FOREGROUND LAYER: Content Guaranteed High Contrast & Legibility -->
+
+  <!-- Top Category Chip / Pill -->
+  <g transform="translate(600, 52)">
+    <rect x="-170" y="-14" width="340" height="28" rx="14" fill="#1e1b4b" class="hud-border" stroke="#6366f1" stroke-width="1.2" />
+    <circle cx="-148" cy="0" r="4.5" fill="#38bdf8" />
+    <text x="-134" y="4.5" fill="#cbd5e1" font-size="11.5" font-weight="600" letter-spacing="1.2">AUTOMATED VISUAL TESTING ECOSYSTEM</text>
+  </g>
+
+  <!-- Main Hero Title -->
+  <g transform="translate(600, 126)">
+    <text text-anchor="middle" font-size="44" font-weight="800" letter-spacing="-0.5" fill="url(#titleGrad)" filter="url(#subtleGlow)">
+      Visual UI &amp; CSS Regression
+    </text>
+  </g>
+
+  <!-- Secondary Title Line -->
+  <g transform="translate(600, 172)">
+    <text text-anchor="middle" font-size="28" font-weight="700" letter-spacing="0.5" fill="#f8fafc">
+      Testing &amp; Pixel Diffing Platforms
+    </text>
+  </g>
+
+  <!-- Subtitle / Value Proposition Description -->
+  <g transform="translate(600, 214)">
+    <text text-anchor="middle" font-size="14.5" font-weight="400" fill="#94a3b8" letter-spacing="0.2">
+      Curated guide to enterprise SaaS platforms, Visual AI engines &amp; open-source pixel diff runners
+    </text>
+  </g>
+
+  <!-- Feature Pills / Badges in Foreground -->
+  <g transform="translate(600, 276)">
+    <!-- Pill 1: Pixel Diff & SSIM -->
+    <g transform="translate(-250, 0)">
+      <rect x="-70" y="-16" width="140" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#38bdf8">🎯 Pixel Diff &amp; SSIM</text>
+    </g>
+
+    <!-- Pill 2: Visual AI Engine -->
+    <g transform="translate(-80, 0)">
+      <rect x="-75" y="-16" width="150" height="32" rx="16" fill="#1e293b" stroke="#818cf8" stroke-width="1" stroke-opacity="0.5" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#a5b4fc">🤖 Visual AI Engines</text>
+    </g>
+
+    <!-- Pill 3: Storybook & CI/CD -->
+    <g transform="translate(95, 0)">
+      <rect x="-75" y="-16" width="150" height="32" rx="16" fill="#1e293b" stroke="#c084fc" stroke-width="1" stroke-opacity="0.5" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#e879f9">⚡ Storybook &amp; CI/CD</text>
+    </g>
+
+    <!-- Pill 4: Zero Regressions -->
+    <g transform="translate(265, 0)">
+      <rect x="-70" y="-16" width="140" height="32" rx="16" fill="#1e293b" stroke="#34d399" stroke-width="1" stroke-opacity="0.5" />
+      <text x="0" y="5" text-anchor="middle" font-size="12" font-weight="600" fill="#34d399">🛡️ Zero Flakiness</text>
+    </g>
+  </g>
+
+  <!-- Bottom Accent Status Bar -->
+  <g transform="translate(600, 335)">
+    <rect x="-180" y="-2" width="360" height="4" rx="2" fill="url(#titleGrad)" opacity="0.8" />
+  </g>
+</svg>
