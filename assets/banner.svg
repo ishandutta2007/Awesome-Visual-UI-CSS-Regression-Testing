@@ -42,7 +42,8 @@
   </defs>
 
   <style>
-    /* Continuous background pulse & scanning animation */
+    <![CDATA[
+    /* Continuous background pulse and scanning animation */
     @keyframes scanMove {
       0% { transform: translateX(-300px); }
       50% { transform: translateX(1100px); }
@@ -85,6 +86,7 @@
     .radar-line {
       animation: scanLineY 4s linear infinite;
     }
+    ]]>
   </style>
 
   <!-- Deep background -->
