@@ -54,7 +54,7 @@ Commercial, cloud-hosted visual UI and CSS regression testing platforms. Sorted 
 
 Self-hosted, developer-friendly open-source frameworks, libraries, and platforms for automated visual UI and CSS regression testing. Sorted in descending order by GitHub stargazers count. ⭐
 
-| Project 📦 | Stars ⭐ | Stack 💻 | License 📜 | Description & Highlights 🔍 |
+| Project 📦 | GitHub_Stars ⭐ | Stack 💻 | License 📜 | Description & Highlights 🔍 |
 |:---|:---:|:---|:---|:---|
 | **[BackstopJS](https://github.com/garris/BackstopJS)** | [![BackstopJS Stars](https://img.shields.io/github/stars/garris/BackstopJS?style=social&color=white)](https://github.com/garris/BackstopJS/stargazers) | Node.js / Puppeteer / Playwright | MIT | Veteran visual regression tool supporting responsive DOM screenshot diffing across screen sizes, interacting with simulated user journeys, and generating self-contained HTML test reports. |
 | **[pixelmatch](https://github.com/mapbox/pixelmatch)** | [![pixelmatch Stars](https://img.shields.io/github/stars/mapbox/pixelmatch?style=social&color=white)](https://github.com/mapbox/pixelmatch/stargazers) | JavaScript / Node.js | ISC | The smallest, simplest, and fastest pure JS pixel-level image comparison library. Powers diffing engines across numerous visual testing tools with anti-aliased pixel detection and perceptual difference tuning. |
@@ -118,7 +118,7 @@ Contributions are warmly welcomed! If you would like to submit a new open-source
 
 1. Fork this repository. 🍴
 2. Ensure the tool is actively maintained and relevant to visual UI / CSS regression testing. 🔍
-3. For open-source projects, include the official GitHub star badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page. ⭐
+3. For open-source projects, include the official GitHub Stars_Badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page. ⭐
 4. Open a pull request with a concise overview of what the tool accomplishes and why it stands out. 🚀
 
 ---
