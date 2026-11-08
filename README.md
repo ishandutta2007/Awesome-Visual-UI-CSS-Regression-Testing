@@ -118,7 +118,7 @@ Contributions are warmly welcomed! If you would like to submit a new open-source
 
 1. Fork this repository. 🍴
 2. Ensure the tool is actively maintained and relevant to visual UI / CSS regression testing. 🔍
-3. For open-source projects, include the official GitHub Stars_Badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page. ⭐
+3. For open-source projects, include the official GitHub_Stars_Badge (`https://img.shields.io/github/stars/<owner>/<repo>?style=social&color=white`) linking to its stargazers page. ⭐
 4. Open a pull request with a concise overview of what the tool accomplishes and why it stands out. 🚀
 
 ---
